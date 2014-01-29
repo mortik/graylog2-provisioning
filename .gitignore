@@ -3,3 +3,6 @@ roles/elasticsearch
 roles/graylog2
 roles/mongodb
 node_modules
+host_vars/*
+live
+
