@@ -1,0 +1,8 @@
+---
+- name: install java 7
+  apt: # -y flag?
+    pkg: "{{ item }}"
+    state: present
+    force: yes
+  with_items:
+    - openjdk-7-jre-headless

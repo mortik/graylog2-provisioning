@@ -1,0 +1,14 @@
+{
+  "name": "graylog2",
+  "version": "0.0.0",
+  "description": "Graylog2 Provisioning",
+  "main": "''",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marten Klitzke <m.klitzke@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bower": "~1.2.8"
+  }
+}

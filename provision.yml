@@ -1,0 +1,16 @@
+# graylog setup
+- hosts: all
+  user: "{{ root_user }}"
+  sudo: True
+  roles:
+    - java
+    -
+      role: "nginx"
+      app_root: "/opt/graylog2"
+      templates:
+        - { src: "templates/vhost.js", dest: "{{ nginx_path }}/sites-available/{{ app }}" }
+    - mongodb
+    -
+      role: elasticsearch
+      elasticsearch_clustername: graylog2
+    - graylog2

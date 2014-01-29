@@ -1,0 +1,22 @@
+{
+  "name": "graylog2",
+  "version": "0.0.0",
+  "authors": [
+    "Marten Klitzke <m.klitzke@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "nginx": "mortik/ansible-nginx-role#v0.3",
+    "elasticsearch": "mortik/ansible-elasticsearch-role#v0.1",
+    "mongodb": "mortik/ansible-mongodb-role#v0.1",
+    "graylog2": "mortik/ansible-graylog2"
+  }
+}
